@@ -1,97 +1,99 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <meta charset="UTF-8">
-      <title>Survey Form</title>
-      <link href="form.css" type="text/css" rel="stylesheet"/>
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300&family=Poppins:wght@200&display=swap" rel="stylesheet">
-   </head>
+<head>
+   <meta charset="UTF-8">
+   <title>Survey Form</title>
+   <link href="form.css" type="text/css" rel="stylesheet"/>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link rel="shortcut icon" href="images/form.png">
+   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300&family=Poppins:wght@200&display=swap" rel="stylesheet">
+</head>
 
-   <body>
-      <div class="container">
-         <header class="header">
-            <div class="cabeçalho">
-               <h1 id="Title" class="text-center">SurveyForm</h1>
-            </div>
-            <p id="description" class="description-text-center">Thank you for help us!</p>
-         </header>
-         <form id="survey-form" action="/pagina-processa-dados-do-form" method="post">
-            <div class="formgroup">
-               <label for="name">Name</label>
-               <input type="text" name="Name" id="name" placeholder="Type your name" class="form-control">
-            </div>
-            <div class="formgroup">
-               <label for="email">Email</label>
-               <input type="text" name="email" id="email" placeholder="Type your e-mail" class="form-control">
-            </div>
-            <div class="formgroup">
-               <label for="age">Age(optional)</label>
-               <input type="text" name="age" id="age" placeholder="Type your age" class="form-control">
-            </div>
-            <div class="formgroup">
-               <p>Which option best describes your current role?</p>
-               <select id="dropdown" name="role" class="form-control" required>
-                  <option disabled selected value>Select Current role</option>
-                  <option value="student">Student</option>
-                  <option value="job">Full time job</option>
-                  <option value="learner">Full time learner</option>
-                  <option value="preferNo">Prefer not to say</option>
-                  <option value="other">Other</option>
-               </select>
-            </div>
-            <div class="formgroup">
-               <p>Would you recommend us to a friend?</p>
-               <label>
-                  <input name="recomendation" value="definitely" type="radio" class="input-radio" checked>
-                  Definitely
+<body>
+   <div class="container">
+      <header class="header">
+         <div class="cabeçalho">
+            <h1 id="Title" class="text-center">SurveyForm</h1>
+         </div>
+         <p id="description" class="description-text-center">Thank you for help us!</p>
+      </header>
+      <form id="survey-form" action="/pagina-processa-dados-do-form" method="post">
+         <div class="formgroup">
+            <label for="name">Name</label>
+            <input type="text" name="Name" id="name" placeholder="Type your name" class="form-control">
+         </div>
+         <div class="formgroup">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" placeholder="Type your e-mail" class="form-control">
+         </div>
+         <div class="formgroup">
+            <label for="age">Age (optional)</label>
+            <input type="text" name="age" id="age" placeholder="Type your age" class="form-control">
+         </div>
+         <div class="formgroup">
+            <label for="dropdown-role" class="label-big">Which option best describes your current role?</label>
+            <select id="dropdown-role" name="role" class="form-control" required>
+               <option disabled selected value>Select Current role</option>
+               <option value="student">Student</option>
+               <option value="job">Full time job</option>
+               <option value="learner">Full time learner</option>
+               <option value="preferNo">Prefer not to say</option>
+               <option value="other">Other</option>
+            </select>
+         </div>
+         <div class="formgroup">
+            <p>Would you recommend us to a friend?</p>
+            <label>
+               <input name="recomendation" value="definitely" type="radio" class="input-radio" checked>
+               Definitely
+            </label>
+            <label>
+               <input name="recomendation" value="maybe" type="radio" class="input-radio">
+               Maybe
+            </label>
+            <label>
+               <input name="recomendation" value="not-sure" type="radio" class="input-radio">
+               Not Sure
+            </label>
+         </div>
+         <div class="formgroup">
+            <label class="label-big" for="dropdown-feature">What is your favorite feature of our site?</label>
+            <select id="dropdown-feature" name="option" class="form-control" required>
+               <option disabled selected value>Select an option</option>
+               <option value="challenges">Challenges</option>
+               <option value="projects">Projects</option>
+               <option value="community">Community</option>
+               <option value="opensrc">Open Source</option>
+            </select>
+         </div>
+         <div class="formgroup">
+            <p>What would you like to see improved?</p>
+            <div>
+               <label class="checklabel" for="front">
+                  <input id="front" type="checkbox" name="front-end-projects" class="input-check">
+                  Front-end Projects
                </label>
-               <label>
-                  <input name="recomendation" value="maybe" type="radio" class="input-radio" checked>
-                  Maybe
+               <label class="checklabel" for="back">
+                  <input id="back" type="checkbox" name="back-end-projects" class="input-check">
+                  Back-end Projects
                </label>
-               <label>
-                  <input name="recomendation" value="not-sure" type="radio" class="input-radio" checked>
-                  Not Sure
+               <label class="checklabel" for="challenges">
+                  <input id="challenges" type="checkbox" name="challenges" class="input-check">
+                  Challenges
                </label>
             </div>
-            <div class="formgroup">
-               <p>What is your favorite feature of our site?</p>
-               <select id="dropdown" name="option" class="form-control" required>
-                  <option disabled selected value>Select an option</option>
-                  <option value="challenges">Challenges</option>
-                  <option value="projects">Projects</option>
-                  <option value="community">Community</option>
-                  <option value="opensrc">Open Source</option>
-               </select>
-            </div>
-            <div class="formgroup">
-               <p>What would you like to see improved?</p>
-               <div>
-                  <label class="checklabel" for="front">
-                     <input type="checkbox" name="front-end-projects" class="input-check">
-                     Front-end Projects
-                  </label>
-                  <label class="checklabel" for="back">
-                     <input type="checkbox" name="back-end-projects" class="input-check">
-                     Back-end Projects
-                  </label>
-                  <label class="checklabel" for="challenges">
-                     <input type="checkbox" name="challenges" class="input-check">
-                     Challenges
-                  </label>
-               </div>
-            </div>
-            <div class="formgroup">
-               <p>Any comments or suggestions?</p>
-               <textarea id="comments" class="input-textarea" name="comments" placeholder="Enter your comment here!"></textarea>
-            </div>
-            <div class="formgroup">
-               <button type="submit" id="submit" class="submit-button">
-                  Submit!</button>
-            </div>
-         </form>
-      </div>
-   </body>
+         </div>
+         <div class="formgroup">
+            <label class="label-big" for="comments">Any comments or suggestions?</label>
+            <textarea id="comments" class="input-textarea" name="comments" placeholder="Enter your comment here!"></textarea>
+         </div>
+         <div class="formgroup">
+            <button type="submit" id="submit" class="submit-button">
+               Submit!
+            </button>
+         </div>
+      </form>
+   </div>
+</body>
 </html>

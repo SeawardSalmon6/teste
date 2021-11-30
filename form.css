@@ -1,0 +1,142 @@
+.container{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+.cabeçalho{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;;
+}
+.text-center{
+    margin: 0;
+}
+p{
+    margin: 10px;
+    margin-top: 5px;
+    margin-left: 28px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    display: flex;
+    box-sizing: border-box;
+}
+.imghead{
+    width: 50px;
+    height: 50px;
+}
+form {
+    /* Apenas para centralizar o form na página */
+    margin: 0 auto;
+    width: 400px;
+    /* Para ver as bordas do formulário */
+    padding: 1em;
+    border: 1px solid black;
+    border-radius: 0.3em;
+    background-image: linear-gradient(115deg, 
+    rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.9)), url('placa.jpg');
+}
+.formgroup{
+    margin-top: 1em;
+    width: 400px;
+}
+label{
+    width: 90px;
+    height: 25px;
+    color: white;
+    display: flex;
+    justify-content: left;
+    margin-left: 28px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    align-items: center;
+}
+input{
+    /* Para certificar-se que todos os campos de texto têm as mesmas configurações de fonte. Por padrão, textareas ter uma fonte monospace*/
+    font: 1em sans-serif;
+
+    /* Para dar o mesmo tamanho a todos os campo de texto */
+    width: 90%;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 30px;
+
+    /* Para harmonizar o look & feel das bordas nos campos de texto*/
+    border: 1px solid #999;
+    border-radius: 0.25rem;
+    font-size: 15px;
+
+}
+body{
+    background-image: linear-gradient(115deg, rgba(58, 58, 158, 0.75),
+    rgba(136, 136, 206, 0.7)), url('background.jpeg');
+    background-size: cover;
+}
+.form-control{
+    width: 90%;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 30px;
+    color: #999;
+    border: 1px solid #999;
+    border-radius: 0.25rem;
+    font-size: 15px;
+    padding-left: 0.5rem;
+}
+.description-text-center{
+    justify-content: center;
+    margin-left: 0;
+    color: black;
+}
+.input-radio{
+    display: flex;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    height: 15px;
+    width: 15px;
+}
+.input-check{
+    display: flex;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    height: 15px;
+    width: 15px;
+}
+.checklabel{
+    width: max-content;
+    height: 25px;
+    color: white;
+    display: flex;
+    margin-left: 28px;
+    margin-bottom: 5px;
+    margin-right: 0;
+    font-size: 15px;
+    font-weight: bold;
+}
+.input-textarea{
+    min-height: 120px;
+    width: 90%;
+    padding: 0.625rem;
+    resize: vertical;
+}
+textarea{
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+button{
+    background: rgb(58, 58, 158);
+    width: 70%;
+    padding: 0.75rem;
+    color: inherit;
+    border-radius: 2px;
+    cursor: pointer;
+    border: none;
+}
